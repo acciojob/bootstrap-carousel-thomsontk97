@@ -1,16 +1,97 @@
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousal</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-<html>
+    <style>
+      img {
+        height: 600px !important;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="carousel slide" id="myCarousel" data-ride="carousel">
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+        </ul>
 
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+        <!-- Wrapper -->
+        <div class="carousel-inner">
+          <div class="item first-slide active">
+            <img
+              src="https://images.pexels.com/photos/1933239/pexels-photo-1933239.jpeg?cs=srgb&dl=pexels-stein-egil-liland-1933239.jpg&fm=jpg"
+              alt="txt"
+            />
+            <div class="carousel-caption">
+              <h3>Caption-Slide</h3>
+            </div>
+          </div>
+          <div class="item second-slide">
+            <img
+              src="https://wallpapers.com/images/featured/1zgeq4ny98yzpzkp.jpg"
+              alt="txt"
+            />
+            <div class="carousel-caption">
+              <h3>Caption-Slide</h3>
+            </div>
+          </div>
+          <div class="item third-slide">
+            <img
+              src="https://images.unsplash.com/photo-1491466424936-e304919aada7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&w=1000&q=80"
+              alt="txt"
+            />
+            <div class="carousel-caption">
+              <h3>Caption-Slide</h3>
+            </div>
+          </div>
+          <div class="item fourth-slide">
+            <img
+              src="https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547__480.jpg"
+              alt="txt"
+            />
+            <div class="carousel-caption">
+              <h3>Caption-Slide</h3>
+            </div>
+          </div>
+          <div class="item fifth-slide">
+            <img
+              src="https://assets.hongkiat.com/uploads/100-absolutely-beautiful-nature-wallpapers-for-your-desktop/blue-sea-sunset.jpg"
+              alt=""
+            />
+            <div class="carousel-caption">
+              <h3>Caption-Slide</h3>
+            </div>
+          </div>
+        </div>
 
-<body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+        <!-- Controls -->
+        <a href="#myCarousel" class="left carousel-control" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Prev</span>
+        </a>
 
-</body>
-
+        <a href="#myCarousel" class="right carousel-control" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </body>
 </html>
